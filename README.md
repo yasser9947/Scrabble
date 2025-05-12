@@ -43,7 +43,7 @@ http://www.dvorkin.com/scrabscor.php
 Solution:
 
 
-public class Scrabble{
+```public class Scrabble{
     public static  int calculatescore(String word){
 
         int totalscore=0;
@@ -91,3 +91,5 @@ int score= Scrabble.calculatescore(word);
 
 System.out.println("The score of: "+ word +" is : " +score);
     }
+
+```
