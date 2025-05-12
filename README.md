@@ -93,4 +93,3 @@ int score= Scrabble.calculatescore(word);
 System.out.println("The score of: "+ word +" is : " +score);
 
     }
-}
