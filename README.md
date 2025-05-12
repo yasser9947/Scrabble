@@ -42,8 +42,8 @@ http://www.dvorkin.com/scrabscor.php
 
 Solution:
 
-public class Scrabble{
 
+public class Scrabble{
     public static  int calculatescore(String word){
 
         int totalscore=0;
@@ -80,7 +80,6 @@ public class Scrabble{
 
 public class Main {
     public static void main(String[] args) {
-
 String word;
 
         Scanner m=new Scanner(System.in);
@@ -91,5 +90,4 @@ String word;
 int score= Scrabble.calculatescore(word);
 
 System.out.println("The score of: "+ word +" is : " +score);
-
     }
