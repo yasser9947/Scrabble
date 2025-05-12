@@ -37,3 +37,60 @@ And to total:
 
 ## Double Check
 http://www.dvorkin.com/scrabscor.php
+
+
+
+Solution:
+
+public class Scrabble{
+
+    public static  int calculatescore(String word){
+
+        int totalscore=0;
+
+        word=word.toUpperCase();
+
+        for (char letter : word.toCharArray()){
+            totalscore += LetterScore(letter);
+        }
+        return totalscore;
+    }
+
+    public static int LetterScore(char letter){
+
+        if( letter=='A' || letter=='E' || letter=='I' || letter=='O' || letter=='U' || letter=='L' || letter=='N' || letter=='R' || letter=='S' || letter=='T')
+            return 1;
+        else if (letter=='D' || letter=='G')
+            return 2;
+        else if(letter=='B' || letter=='C' || letter=='M' || letter=='P')
+            return 3;
+        else if (letter=='F' || letter=='H' || letter=='V' || letter=='W' || letter=='Y')
+            return 4;
+        else if (letter=='K')
+            return 5;
+        else if (letter=='J' || letter=='X')
+            return 8;
+        else if (letter=='Q' || letter=='Z')
+            return 10;
+        else
+            return 0;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+
+String word;
+
+        Scanner m=new Scanner(System.in);
+
+        System.out.println("Enter a word: ");
+
+        word=m.nextLine();
+int score= Scrabble.calculatescore(word);
+
+System.out.println("The score of: "+ word +" is : " +score);
+
+    }
+}
