@@ -40,7 +40,8 @@ http://www.dvorkin.com/scrabscor.php
 
 
 
-Solution:
+
+## Solution:
 
 
 ```public class Scrabble{
