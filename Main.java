@@ -16,7 +16,7 @@ public class Main{
                 scrabble.calculation(word);
             }
             else if (!word.equals("?"))
-                System.out.println("Enter a valid value \nto exists enter ?");
+                System.out.println("Enter a valid value \nenter ? to exists enter ?");
 
 
       }while (!word.equals("?"));
